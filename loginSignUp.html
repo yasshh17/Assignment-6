@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Login/Sign Up - Vallejo Library</title>
+    <link rel=" stylesheet" href="style4.css">
+</head>
+<body>
+
+    <style>
+      body
+      {
+       margin:0;
+      }
+      
+      header
+      {
+        background: #007bff;
+        color: #fff;
+        padding: 8px 0px 6px 40px;
+        height:45px;
+        justify-content: space-between;
+      }
+      
+      header h1{
+                  display:inline;
+                  font-family: 'Arial', sans-serif;
+                  font-weight:400;
+                  font-size:32;
+                  float:left;
+                  margin-top:0px;
+                  margin-right:10px;
+      }
+      
+      nav ul{
+           display:inline;
+           padding: 0px;
+           float: left;
+      }
+      
+      nav ul li{
+           display:block;
+           list-style-type:none;
+           color:white;
+           float:left;
+           margin-left:12px;
+      }
+      
+      nav ul li a{
+                     color:white;
+                     text-decoration:none;
+      }
+      
+      #nav{
+                font-family: 'Arial', sans-serif;
+      }
+
+      .line:hover{
+        background-color:black;
+        padding: 30x 10px 11px 10px;
+      }
+
+    
+          footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+          }
+        
+          footer p {
+            margin: 0;
+          }
+        </style>
+    <header>
+        <h1>Vallejo Library</h1>
+        <nav>
+            <ul>
+              <li><a class=" line" href="home.html">Home</a></li>
+              <li><a class=" line" href="libraryCard.html">Library Card</a></li>
+              <li><a class=" line" href="generalEnquiries.html">Enquiries</a></li>
+              <li><a class=" line" href="bookCollection.html">Book Collection</a></li>
+              <li><a class=" line" href="reserveaBook.html">Reserve Your Book</a></li>
+              <li><a class=" line" href="latestNews.html">Latest News</a></li>
+              <li><a class=" line" href="loginSignUp.html"> Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <section id="login-section">
+        <h2>Login</h2>
+
+        <form action="searchCatalog.html" method="get" id="searchForm">
+            <input type="text" name="query" placeholder="Search books...">
+            <button type="submit">Search</button>
+        </form>
+        
+        <form action="loginProcess.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="#" onclick="showSignup()">Sign up here</a>.</p>
+    </section>
+    
+    <section id="signup-section" style="display: none;">
+        <h2>Sign Up</h2>
+        <form action="signupProcess.php" method="post">
+            <label for="newUsername">Username:</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+            <label for="newPassword">Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="#" onclick="showLogin()">Login here</a>.</p>
+    </section>
+
+    <footer>
+        <p>&copy; Vallejo Library. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showSignup() {
+            document.getElementById('login-section').style.display = 'none';
+            document.getElementById('signup-section').style.display = 'block';
+        }
+
+        function showLogin() {
+            document.getElementById('signup-section').style.display = 'none';
+            document.getElementById('login-section').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

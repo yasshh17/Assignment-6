@@ -1,0 +1,96 @@
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Book Collection</title>
+    <link rel=" stylesheet" href="style1.css">
+    
+</head>
+
+<body>
+
+    
+    <header>
+        <h1>Vallejo Library</h1>
+        <nav>
+            <ul>
+                <li><a class=" line" href="home.html">Home</a></li>
+                <li><a class=" line" href="libraryCard.html">Library Card</a></li>
+                <li><a class=" line" href="generalEnquiries.html">Enquiries</a></li>
+                <li><a class=" line" href="bookCollection.html">Book Collection</a></li>
+                <li><a class=" line" href="reserveaBook.html">Reserve Your Book</a></li>
+                <li><a class=" line" href="latestNews.html">Latest News</a></li>
+                <li><a class=" line" href="loginSignUp.html"> Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        <section>
+            <h2> Top Picks </h2>
+
+            <form action="searchCatalog.html" method="get" id="searchForm">
+                <input type="text" name="query" placeholder="Search catalog...">
+                <button type="submit">Search</button>
+            </form>
+
+            <article>
+                <h3> Think Again</h3>
+                <p>Author: Adam Grant</p>
+                <p>Genre: Fiction</p>
+                <p>Total Copies Available: 8</p>
+                <p>Total Number of Copies: 15</p>
+                <img src="book1.jpg" alt="Think Again Book Image">
+                <button onclick="reserveBook('Think Again')">Reserve</button>
+            </article>
+
+            <article>
+            <h3> Tears of the Dragon</h3>
+                <p>Author: Bryan Davis</p>
+                <p>Genre: Fiction</p>
+                <p>Total Copies Available: 20</p>
+                <p>Total Number of Copies: 30</p>
+                <img src="book2.jpg" alt=" Tears of the Dragon Book Image">
+                <button onclick="reserveBook('Tears of the Dragon')">Reserve</button>
+            </article>
+
+            <article>
+                <h3>Never Quite On A Bad Day</h3>
+                <p>Author: Phebe Trotman</p>
+                <p>Genre: Non Fiction</p>
+                <p>Total Copies Available: 10</p>
+                <p>Total Number of Copies: 15</p>
+                <img src="book3.jpg" alt=" Tears of the Dragon Book Image">
+                <button onclick="reserveBook('Never Quite On A Bad Day')">Reserve</button>
+            </article>
+
+            <article>
+                <h3>City Under One Roof </h3>
+                <p>Author: Iris Yamashita</p>
+                <p>Genre: Fiction</p>
+                <p>Total Copies Available: 8</p>
+                <p>Total Number of Copies: 10</p>
+                <img src="book4.jpg" alt=" Tears of the Dragon Book Image">
+                <button onclick="reserveBook('City Under One Roof')">Reserve</button>
+            </article>
+
+        </section>
+    </main>
+
+   
+    <footer>
+        <p>&copy; Vallejo Library. All rights reserved.</p>
+    </footer>
+
+   
+    <script>
+        function reserveBook(bookName) {
+            
+            alert(`Book "${bookName}" reserved successfully!`);
+        }
+    </script>
+
+</body>
+
+</html>
