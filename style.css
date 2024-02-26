@@ -1,81 +1,67 @@
-body
-{
- font-family: Arial, sans-serif;
- margin:0;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
 
-header{
-font-family: Arial, sans-serif;
-background: #007bff;
-color: #fff;
-padding: 8px 0px 6px 40px;
-height:45px;
-justify-content: space-between;
+header {
+  background: #007bff;
+  color: #fff;
+  padding: 8px 0px 6px 40px;
+  height: 45px;
+  justify-content: space-between;
 }
 
-header h1{
-font-family: Arial, sans-serif; 
-display:inline;
-font-family: 'Arial', sans-serif;
-font-weight:400;
-font-size:32;
-float:left;
-margin-top:0px;
-margin-right:10px;
+header h1 {
+  display: inline;
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  float: left;
+  margin-top: 0px;
+  margin-right: 10px;
 }
 
-nav ul{
-font-family: Arial, sans-serif ;    
-display:inline;
-padding: 0px;
-float: left;
+
+nav ul {
+  display: flex;
+  display: inline;
+  padding: 0px;
+  float: left;
 }
 
-nav ul li{
-font-family: Arial, sans-serif;    
-display:block;
-list-style-type:none;
-color:white;
-float:left;
-margin-left:12px;
+nav ul li {
+  display: block;
+  list-style-type: none;
+  color: black;
+  float: left;
+  margin-left: 12px;
 }
 
 nav ul li a {
-font-family: Arial, sans-serif;  
-color:white;
-text-decoration:none;
+  color: white;
+  text-decoration: none;
 }
 
-#nav{
-font-family: 'Arial', sans-serif;
+#nav {
+  font-family: 'Arial', sans-serif;
 }
 
-.line:hover{
-font-family: Arial, sans-serif;
-background-color:black;
-padding: 30x 10px 11px 10px;
+
+
+footer {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
-.divder{
-font-family: Arial, sans-serif;
-background-color:blue;
-height: 5px;
+footer p {
+  margin: 0;
 }
 
-section.latest-news {
-font-family: Arial, sans-serif;
-background-color: #f0f0f0;
-padding: 20px;
-}
-
-section.latest-news h2 {
-font-family: Arial, sans-serif;
-margin-top: 0;
-  }
-
-section#book-catalog {
-padding: 20px;
-  }
 
 .book {
 font-family: Arial, sans-serif;
@@ -220,5 +206,30 @@ box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5),
     nav li {
         display: block;
         margin-bottom: 10px;
+    }
+
+  
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column; 
+        align-items: flex-start;
+      }
+    
+      header h1 {
+        margin-bottom: 10px;
+      }
+    
+      nav ul {
+        flex-direction: column; 
+        align-items: flex-start;
+      }
+    
+      nav ul li {
+        margin-bottom: 5px;
+        margin-right: 0;
+      }
+
+
     }
 

@@ -36,7 +36,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -44,10 +44,7 @@ nav ul li a {
   font-family: 'Arial', sans-serif;
 }
 
-.line:hover {
-  background-color: black;
-  padding: 30px 10px 11px 10px;
-}
+
 
 footer {
   background-color: #007bff;
