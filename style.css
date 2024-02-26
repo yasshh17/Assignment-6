@@ -23,6 +23,7 @@ header h1 {
 
 
 nav ul {
+  
   display: flex;
   display: inline;
   padding: 0px;
@@ -120,7 +121,7 @@ color:black;
 
 .buttontraining{
 margin:0% 0% 0% 55%;
-background: blue;
+background: white;
 color:black;
 border:50px;
 font-size:1.4em;
