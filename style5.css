@@ -1,64 +1,64 @@
- body
-      {
-       margin:0;
-      }
-      
-      header
-      {
-        background: #007bff;
-        color: #fff;
-        padding: 8px 0px 6px 40px;
-        height:45px;
-        justify-content: space-between;
-      }
-      
-      header h1{
-                  display:inline;
-                  font-family: 'Arial', sans-serif;
-                  font-weight:400;
-                  font-size:32;
-                  float:left;
-                  margin-top:0px;
-                  margin-right:10px;
-      }
-      
-      nav ul{
-           display:inline;
-           padding: 0px;
-           float: left;
-      }
-      
-      nav ul li{
-           display:block;
-           list-style-type:none;
-           color:white;
-           float:left;
-           margin-left:12px;
-      }
-      
-      nav ul li a{
-                     color:white;
-                     text-decoration:none;
-      }
-      
-      #nav{
-                font-family: 'Arial', sans-serif;
-      }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
 
-      .line:hover{
-        background-color:black;
-        padding: 30x 10px 11px 10px;
-      }
-          footer {
-            background-color: #007bff;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-          }
-        
-          footer p {
-            margin: 0;
-          }
+header {
+  background: #007bff;
+  color: #fff;
+  padding: 8px 0px 6px 40px;
+  height: 45px;
+  justify-content: space-between;
+}
+
+header h1 {
+  display: inline;
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  float: left;
+  margin-top: 0px;
+  margin-right: 10px;
+}
+
+nav ul {
+  display: inline;
+  padding: 0px;
+  float: left;
+}
+
+nav ul li {
+  display: block;
+  list-style-type: none;
+  color: white;
+  float: left;
+  margin-left: 12px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#nav {
+  font-family: 'Arial', sans-serif;
+}
+
+.line:hover {
+  background-color: black;
+  padding: 30px 10px 11px 10px;
+}
+
+footer {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+}
