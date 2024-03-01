@@ -207,6 +207,31 @@ img {
   bottom: auto;
 }
 
+article {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  }
+  
+  article img {
+  font-family: Arial, sans-serif;
+  max-width: 150px; 
+  height: auto;
+  margin-left: 20px; 
+  }
+  
+  
+  footer {
+  font-family: 'Arial', sans-serif;   
+  text-align: center;
+  padding: 20px;
+  background-color: #007bff;
+  color: #fff;
+      
+  }
+
 @media (max-width: 768px) {
   header {
       padding: 5px;
