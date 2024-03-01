@@ -1,64 +1,64 @@
 body {
   font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
-  background: #007bff;
+  font-family: Arial, sans-serif;
+  background-color: #007bff;
   color: #fff;
-  padding: 8px 0px 6px 40px;
-  height: 45px;
-  justify-content: space-between;
+  padding: 2px;
+  text-align: center;
 }
 
-header h1 {
-  text-align: center;
-  display: inline;
-  font-family: 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 32px;
-  float: left;
-  margin-top: 0px;
-  margin-right: 10px;
+header h1{
+  color: white;
+  font-family: Arial, sans-serif;
+  display:inline;
 }
+ 
 
 nav ul {
-  display: flex;
+  color: #fff;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  color: #fff;
   display: inline;
-  padding: 0px;
-  float: left;
+  margin-right: 15px;
 }
 
-nav ul li {
-  display: block;
-  list-style-type: none;
-  color: black;
-  float: left;
-  margin-left: 12px;
-}
+nav ul li a{
+  font-family: Arial, sans-serif;
+  color:white;
+  text-decoration:none;
+  }
+  
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-#nav {
-  font-family: 'Arial', sans-serif;
+section {
+  margin: 20px;
 }
 
 footer {
+  font-family: Arial, sans-serif;
   background-color: #007bff;
   color: #fff;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px;
   position: fixed;
-  width: 100%;
   bottom: 0;
+  width: 100%;
+  height: auto;
 }
 
-footer p {
-  margin: 0;
-}
+
 
 .book {
   font-family: Arial, sans-serif;
@@ -109,10 +109,18 @@ footer {
 
 .trainingsub {
   font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 9% 5% 0% 55%;
-  font-size: 30px;
+  margin: 0% 0% 0% 55%;
+  background: white;
   color: black;
+  border: 50px;
+  font-size: 1.4em;
+  padding: 0.1em;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Arial', sans-serif;
+  font-weight: 900;
+  border-radius: 5px;
+  
 }
 
 .buttontraining {
@@ -126,7 +134,11 @@ footer {
   outline: none;
   font-family: 'Arial', sans-serif;
   font-weight: 900;
+  border-radius: 5px;
+  
 }
+
+
 
 .a {
   width: 200px;
@@ -143,7 +155,7 @@ footer {
 .h2 {
   font-family: Arial, sans-serif;
   width: 200px;
-  background: blue;
+  background:white;
   line-height: 50px;
   text-align: center;
   font-weight: bold;
@@ -195,33 +207,18 @@ img {
   bottom: auto;
 }
 
-section {
-  flex-direction: column;
-  align-items: center;
-}
-
-nav li {
-  display: block;
-  margin-bottom: 10px;
-}
-
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  header h1 {
-    margin-bottom: 10px;
+      padding: 5px;
   }
 
   nav ul {
-    flex-direction: column;
-    align-items: flex-start;
+      text-align: center;
+      margin-top: 10px;
   }
 
-  nav ul li {
-    margin-bottom: 5px;
-    margin-right: 0;
+  nav li {
+      display: block;
+      margin-bottom: 10px;
   }
 }
